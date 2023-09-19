@@ -1,0 +1,53 @@
+import random
+c=0
+t=0
+w=0
+options = ["Rock", "Paper", "Scissors"]
+play="y"
+while play=="y":
+
+ 
+
+
+ 
+ 
+ user_choice = input("Choose Rock, Paper, or Scissors: ")
+
+ computer_choice = random.choice(options)
+
+ 
+
+ print("You chose: ", user_choice)
+
+ print("Computer chose: ", computer_choice)
+
+ 
+
+ if user_choice == computer_choice:
+
+     print("It's a tie!")
+
+     t=t+1
+ elif user_choice == "Rock" and                      computer_choice == "Scissors":
+
+     print("You win!")
+     w=w+1
+ elif user_choice == "Paper" and computer_choice == "Rock":
+
+     print("You win!")
+     w=W+1
+
+ elif user_choice == "Scissors" and computer_choice == "Paper":
+
+     print("You win!")
+     w=w+1
+ else:
+
+     print("Computer wins!")
+     c=c+1
+    
+     play=input("pres Y to play again else any key to stop")
+     
+print("computer won= ",c)
+print("you won= ",w)
+print("tied=",t)
